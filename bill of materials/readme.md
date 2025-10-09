@@ -8,5 +8,6 @@
 | 3 | Wielen                     | 65mm diameter              | nieuw | €1,0075 | 2 | €2,015  |
 | 4 | Dual Motor Driver          | TB6612FNG                  | nieuw | €1,338  | 1 | €1,338  |
 | 5 | HC-05 Wireless Module      | RN-42                      | nieuw | €3,80   | 1 | €3,80   |
+| 6 | Arduino Leonardo           | atmega32u4                 | recup | €19,90  | 1 | €19,90  |
 ||||||||
-|Totaal||||||€19,653|
+|Totaal||||||€39,553|
