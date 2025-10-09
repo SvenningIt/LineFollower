@@ -9,5 +9,7 @@
 | 4 | Dual Motor Driver          | TB6612FNG                  | nieuw | €1,338  | 1 | €1,338  |
 | 5 | HC-05 Wireless Module      | RN-42                      | nieuw | €3,80   | 1 | €3,80   |
 | 6 | Arduino Leonardo           | atmega32u4                 | recup | €19,90  | 1 | €19,90  |
+| 7 | Tact switch                | MS226D                     | recup | €0,40   | 1 | €0,40   |
+| 8 | Tact switch                | MS226B                     | recup | €0,36   | 1 | €0,36   |
 ||||||||
-|Totaal||||||€39,553|
+|Totaal||||||€40,313|
