@@ -2,7 +2,7 @@
 // Arduino Leonardo voorbeeld
 // Deze code leest 6 IR-sensoren uit en toont de waarden in de Serial Monitor.
 
-const int IR_LED = 8;  // Pin die de IR-LEDs aan/uit zet
+const int IR_LED = 9;  // Pin die de IR-LEDs aan/uit zet
 
 void setup() {
   Serial.begin(115200);          // Start communicatie met de computer
