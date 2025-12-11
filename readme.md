@@ -7,21 +7,21 @@ njoem
   
 ## specifications
 
-microcontroller:
+microcontroller: Arduino Leonardo	atmega32u4
 
-motors: 
+motors: Aslong DC-Transmissiemotor JGA12-N20-30 - 6V - 500RPM
 
-h-bridge:
+h-bridge:	TB6612FNG
 
-sensors:
+sensors: HY-S301
 
-batteries:
+batteries: 	EVE ICR18650-26VA 2650mAh - 13A
 
-wireless communication:
+wireless communication: HC-05 Wireless Module	RN-42
 
-distance sensor - motors:
+distance sensor - motors: 11cm
 
-weight:
+weight: ?
 
-speed: 
+speed: aan te vullen door de officiele tijd
 
