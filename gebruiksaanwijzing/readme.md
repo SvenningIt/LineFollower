@@ -17,7 +17,7 @@ set diff [0..1]
 set kp [0..]  
 set ki [0..]  
 set kd [0..]  
-set dAlpha [0..1]
+set dAlpha [0..1]  
 calibrate black  
 calibrate white  
 
