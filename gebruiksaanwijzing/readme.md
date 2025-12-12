@@ -5,7 +5,7 @@ Vervang de batterijen indien ze leeg zijn van type 18650, de batterijhouder bevi
 
 ### draadloze communicatie
 #### verbinding maken
-Download eerst de "bluetooth serial terminal" app. Of een andere geschikte app, ik koos voor deze aangezien er macros ingesteld kunnen worden die het debuggen makkelijk maken. Steek de batterijen in de wagen en zet de bluetooth van je smartphone aan en maak verbinding met HC-05, de code is meestal 0000 of 1234 (In mijn geval 1234). Open de bluetooth serial terminal app en druk op het stekker icoontje rechtsboven.
+Download eerst de "Serial Bluetooth Terminal" app. Of een andere geschikte app, ik koos voor deze aangezien er macros ingesteld kunnen worden die het debuggen makkelijk maken. Steek de batterijen in de wagen en zet de bluetooth van je smartphone aan en maak verbinding met HC-05, de code is meestal 0000 of 1234 (In mijn geval 1234). Open de bluetooth serial terminal app en druk op het stekker icoontje rechtsboven.
 
 #### commando's
 debug [on/off]  
