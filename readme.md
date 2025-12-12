@@ -1,8 +1,8 @@
 # LineFollower
 
-njoem
 
-![A description of my image](images/empty.png)
+
+![A description of my image](images/LineFollower_Bovenkant.jpg)
 
   
 ## specifications
