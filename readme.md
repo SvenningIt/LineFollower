@@ -21,7 +21,7 @@ wireless communication: HC-05 Wireless Module	RN-42
 
 distance sensor - motors: 11cm
 
-weight: ?
+weight: 244g
 
-speed: aan te vullen door de officiele tijd
+speed: 0,74499 m/s
 
