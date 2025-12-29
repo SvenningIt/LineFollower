@@ -1,22 +1,22 @@
-const int buttonPin = 2; // knop
+const int buttonPin = 2; // interrupt pin
 const int ledPin    = 6; // LED
 
-bool running = true;      
+volatile bool running = true;      
+
 unsigned long previousMillis = 0;
 const long interval = 500;
 
-unsigned long lastButtonTime = 0; // voor debounce
-
-/*Led knippert totdat de knop een interrupt aanstuurt
-hierdoor zal het programma even pauzeren voordat het de loop verder uitvoert*/
+volatile unsigned long lastButtonTime = 0; // debounce
 
 void setup() {
   pinMode(buttonPin, INPUT_PULLUP);
   pinMode(ledPin, OUTPUT);
+
+  // Interrupt koppelen aan knop
+  attachInterrupt(digitalPinToInterrupt(buttonPin), stopLed, FALLING);
 }
 
 void loop() {
-  // Knipperlicht
   if (running) {
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillis >= interval) {
@@ -26,13 +26,13 @@ void loop() {
   } else {
     digitalWrite(ledPin, LOW); // LED uit
   }
+}
 
-  // Knop check met debounce
-  if (digitalRead(buttonPin) == LOW) {
-    unsigned long currentTime = millis();
-    if (currentTime - lastButtonTime > 50) { // 50 ms debounce
-      running = false; // LED stoppen
-    }
+// Interrupt Service Routine (ISR)
+void stopLed() {
+  unsigned long currentTime = millis();
+  if (currentTime - lastButtonTime > 50) { // debounce
+    running = false;
     lastButtonTime = currentTime;
   }
 }
