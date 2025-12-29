@@ -6,13 +6,12 @@ volatile bool running = true;
 unsigned long previousMillis = 0;
 const long interval = 500;
 
-volatile unsigned long lastButtonTime = 0; // debounce
+volatile unsigned long lastButtonTime = 0;
 
 void setup() {
   pinMode(buttonPin, INPUT_PULLUP);
   pinMode(ledPin, OUTPUT);
 
-  // Interrupt koppelen aan knop
   attachInterrupt(digitalPinToInterrupt(buttonPin), stopLed, FALLING);
 }
 
@@ -28,10 +27,9 @@ void loop() {
   }
 }
 
-// Interrupt Service Routine (ISR)
 void stopLed() {
   unsigned long currentTime = millis();
-  if (currentTime - lastButtonTime > 50) { // debounce
+  if (currentTime - lastButtonTime > 50) {
     running = false;
     lastButtonTime = currentTime;
   }
